@@ -1,0 +1,15 @@
+Family Directory links family members by their parents and spouse to form a family tree
+
+This applicatin requires the use of a mysql database with certain tables. The file setup.sql contains the script to set them up. **Note** The file setup.sql does not setup a "test" user. You need to manually set the information for the first person in the family manually.
+
+It also uses the Smarty Template Engine. Smarty files can be kept anywhere in the file structure but the file '/php/tpl_setup.php' should be edited to point to that location.
+
+User's profile pictures are coded to be stored in '/images/faces/'
+
+Currently only the ancestor tree is visible. There is code to display the descendant trees but the alignment of the user tiles is not correct and so I disabled the link.
+
+*************************************************************
+*                   Future Updates                          *
+*************************************************************
+1) Add the descendant trees
+2) Implement a 'click-to-edit' UX on the showuser page. This will eliminate the need for the edituser page. I have played around with this and as a result so javascript and php code has been left in scripts.js and showuser.tpl
